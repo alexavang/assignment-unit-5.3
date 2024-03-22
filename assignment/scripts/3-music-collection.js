@@ -15,7 +15,7 @@ function addToCollection(collection, title, artist, yearPublished) {
 }
 
 function showCollection(collection) {
-  for (musicDetail of collection)
+  for (let musicDetail of collection)
     console.log(
       `${musicDetail.title} by ${musicDetail.artist}, published in ${musicDetail.yearPublished}`
     );
@@ -23,7 +23,7 @@ function showCollection(collection) {
 
 function findByArtist(collection, artist) {
   let matchingArtist = [];
-  for (musicDetail of collection) {
+  for (let musicDetail of collection) {
     if (musicDetail.artist === artist) {
       matchingArtist.push(musicDetail);
     }
